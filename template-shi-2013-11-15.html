@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="utf-8" />
+    <head>
+<!--TODO: title -->    
+    <title>OpenNLP Web Services</title>    
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" >  </script>     
+    <style>      
+        body, p, td, pre {
+            font-size: 14pt; }
+        
+        body {  
+            background-color:lightyellow; 
+            counter-reset: section subsection figure;}
+        
+        h1 {
+            text-align:center }
+        
+        h2 {
+            counter-increment: section; }    
+
+        h3 {
+            counter-increment: subsection; }
+        
+        h4 {
+            counter-increment: figure; }
+        
+        h2:before {
+            content:counter(section) ". "; }
+        
+        h3:before {
+            content:counter(section) "." counter(subsection) " "; }
+        
+        h4:before{
+            content:"Fig. " counter(section) "." counter(figure) " - ";}
+        
+        .reset {
+            counter-reset:subsection figure;}
+        
+        .nav-bar{
+            list-style-type:none;
+            margin:0;
+            padding:0; }
+        
+        img {
+            margin-left: 10pt;
+            border: thin solid gray; }
+        
+        .sample { 
+            background-color: black;
+            font-size: 12pt;
+            color:white;
+            padding: 4pt;
+            margin-left: 10pt;
+            margin-right: 30pt; 
+            display: block;
+            white-space: pre-line;}
+        
+        .code { 
+            padding: 4pt;
+            font-size: 12pt;
+            background-color: whitesmoke;
+            border: thin dotted gray;
+            margin-left: 10pt;
+            margin-right: 30pt; 
+            display: block; 
+            white-space: pre-line;}
+        
+        .author {
+            font-size: 16pt; 
+            text-align:center;}
+
+
+        /*  grid tables  */
+        table.g {
+            margin: 8px;
+            border-width: 1px;
+            border-color: gray;
+            border-collapse: collapse; }
+
+        table.g th {
+            border-width: 1px;
+            padding: 8px 8px 8px 8px;
+            border-style: solid;
+            border-color: gray;
+            background-color: lightyellow; }
+
+        table.g td {
+            text-align:center;
+            border-width: 1px;
+            padding: 8px 8px 8px 8px;
+            border-style:solid;
+            border-color: gray;
+            background-color: #ffffff; }
+
+        /*  vertical tables  */
+        table.v {
+            margin: 8px;
+            border-collapse: collapse; }
+
+        table.v thead {
+            border-right: 10px solid;
+            border-left: 10px solid;
+            background: #fc9;
+            border-color: #fc9;}
+
+        table.v th {
+            padding: 4px 20px 4px 20px;
+            border: 1px #fff solid; }
+
+        table.v tbody{
+            text-align:left;
+            border-right: 10px solid;
+            border-left: 10px solid;
+            border-color: #adf;
+            background: #adf;
+            vertical-align: top; }
+
+        table.v td {
+            padding:  4px 20px 4px 20px;
+            border: 1px #fff solid; }
+
+        /*  horizontal tables  */
+        table.h {
+            margin: 8px;
+            border-collapse:collapse; }
+
+        table.h th {
+            padding:  4px 40px 4px 40px;
+            border:1px solid #98bf21;
+            background-color:#A7C942;
+            color:#fff; }
+
+        table.h td {
+            text-align:center;
+            border:1px solid #98bf21;
+            padding: 4px 40px 4px 40px; }
+
+        table.h tr.alt td {
+            color:#000;
+            background-color:#EAF2D3; }
+
+        </style></head>
+<body>
+    <a name="_top_" />
+    <nav class="nav-bar">
+        <a href="#create-project">create project</a>
+        | 
+        <a href="#">wrap web service</a>
+        |
+        <a href="#">deploy</a></nav>
+
+
+
+
+<!--TODO: title -->    
+    <h1>OpenNLP as Web Services</h1>
+    <p class="author">
+ Version <var>0.01</var>, <ruby>史 春奇 <rt> Chunqi Shi</rt></ruby>,  Nov. 2013</p>  
+    
+    
+    
+<a name="create-project" />
+<h2>Create Maven Project  <a href="#_top_" style="text-decoration: none;">^</a></h2>
+
+    
+<samp class="sample">## 
+Java Class
+</samp>
+    
+<p/>    
+    
+<code class="code prettyprint">//
+String x = "good."
+String y = "morning.".
+</code>
+    
+    
+<figure>
+    <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+    <figcaption><h4> A view of the pulpit rock in Norway.</h4></figcaption></figure>
+    <h3/>
+    <h3/>
+    <h4/>
+    <h2></h2>
+    <h3 class="reset"/>
+    <h3/>
+    <h4 class="reset" />
+    <h4/>
+
+
+
+
+
+<!--
+<table class="g">
+<thead>
+<th>name</th>
+<th>age</th>
+<th>sex</th>
+</thead>
+<tbody>
+<tr>
+<td> joan </td>
+<td> 24 </td>
+<td> f </td>
+</tr>
+<tr>
+<td> archie </td>
+<td> 29 </td>
+<td> m </td>
+</tr>
+<tr>
+<td> bella </td>
+<td> 45 </td>
+<td> f </td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="h">
+<thead>
+<th>name</th>
+<th>age</th>
+<th>sex</th>
+</thead>
+<tbody>
+<tr>
+<td> joan </td>
+<td> 24 </td>
+<td> f </td>
+</tr>
+<tr>
+<td> archie </td>
+<td> 29 </td>
+<td> m </td>
+</tr>
+<tr>
+<td> bella </td>
+<td> 45 </td>
+<td> f </td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="v">
+<thead>
+<th>name</th>
+<th>age</th>
+<th>sex</th>
+</thead>
+<tbody>
+<tr>
+<td> joan </td>
+<td> 24 </td>
+<td> f </td>
+</tr>
+<tr>
+<td> archie </td>
+<td> 29 </td>
+<td> m </td>
+</tr>
+<tr>
+<td> bella </td>
+<td> 45 </td>
+<td> f </td>
+</tr>
+</tbody>
+</table>
+-->
+
+
+
+
+
+
+
+
+
+
+<footer><hr/> 
+<p>
+    Progress: 
+    <progress value="1" max="100"></progress></p>
+<p>
+    Contacts: 
+    <nonsense>shi</nonsense>cq@<nonsense>cs.</nonsense>brandeis.<nonsense></nonsense>edu,
+    <nonsense>mar</nonsense>c@<nonsense>cs.</nonsense>brandeis.<nonsense></nonsense>edu  </p></footer>
+    
+    </body></html>
