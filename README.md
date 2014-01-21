@@ -1,3 +1,4 @@
+[Example]:http://eldrad.cs-i.brandeis.edu:8080/python-as-web-service-shi-2013-12-17.html
 
 # Why HtMant?
 Generally we could log our steps into wiki. 
