@@ -30,7 +30,8 @@ Define <nav> with class "nav-bar"
 
 ```
 
-Add <H2> as section, and name for navigating bar
+Add H2 as section, and name for navigating bar
+
 ```
 	<a name="available-services" />
 	<h2>Available Service <a href="#_top_" style="text-decoration: none;">^</a></h2>
@@ -97,7 +98,7 @@ Three types of tables styles are defined: class "g" (Grid), "h" (Horizontal) "v"
 
 Python tool imgtobase64.py could generate embeded base64 <img> data for images under current directory (.) 
 
-With <img> data, you can add figures
+With img data, you can add figures
 
 ```
 <figure>
