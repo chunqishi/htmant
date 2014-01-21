@@ -19,7 +19,7 @@ Here is an [Example].
 ## Navigating Bar
 
 Define <nav> with class "nav-bar"
-'''
+```
     <nav class="nav-bar">
         <a href="#available-services">available services</a>
         | 
@@ -28,45 +28,45 @@ Define <nav> with class "nav-bar"
         <a href="#">deploy</a></nav>
 
 
-'''
+```
 
 Add <H2> as section, and name for navigating bar
-'''
+```
 	<a name="available-services" />
 	<h2>Available Service <a href="#_top_" style="text-decoration: none;">^</a></h2>
-'''
+```
 
 ## Section
 
 Use class "reset" to recalculate subsection number
-'''
+```
 <h2>Available Service <a href="#_top_" style="text-decoration: none;">^</a></h2>
 
 <h3 class="rest"> Main Available Services</h3>
 
-'''
+```
 
 ## Code and Sample
 
 Define codes.
-'''
+```
 <code class="code prettyprint linenums">//
 String x = "good."
 String y = "morning.".
 </code>
-'''
+```
 
 
 Define samples.
-'''
+```
 <samp class="sample">[shicq@chilote lapps]$ git --version <span style="color:blue">&crarr;</span>
 </samp>  
-'''
+```
 
 ## Table
 
 Three types of tables styles are defined: class "g" (Grid), "h" (Horizontal) "v" (Vertical)
-'''
+```
 <table class="g">
 <thead><tr>
 <th>name</th>
@@ -91,7 +91,7 @@ Three types of tables styles are defined: class "g" (Grid), "h" (Horizontal) "v"
 </tr>
 </tbody>
 </table>
-'''
+```
 
 ## Embedded Image
 
@@ -99,12 +99,12 @@ Python tool imgtobase64.py could generate embeded base64 <img> data for images u
 
 With <img> data, you can add figures
 
-'''
+```
 <figure>
     <img src="data:image/jpeg;base64,------" alt="" />
     <figcaption><h4> A view of the pulpit rock in Norway.</h4></figcaption></figure>
 
-'''
+```
 
 
 
