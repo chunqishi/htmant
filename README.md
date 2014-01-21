@@ -43,7 +43,7 @@ Use class "reset" to recalculate subsection number
 ```
 <h2>Available Service <a href="#_top_" style="text-decoration: none;">^</a></h2>
 
-<h3 class="rest"> Main Available Services</h3>
+<h3 class="reset"> Main Available Services</h3>
 
 ```
 
