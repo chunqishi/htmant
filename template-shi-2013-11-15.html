@@ -143,6 +143,31 @@
             http://learnlayout.com/inline-block.html
             http://www.w3schools.com/cssref/css_colornames.asp
         **/
+
+        div.link {
+            display: inline-block;
+            width: 80px;
+            height: 100px;
+            position: relative;
+            text-align:center;
+            vertical-align: middle; }
+
+        div.black {
+            border-color: Black ;
+            border-width: 2px; }
+
+        div.black span.h {
+            background-color: Black       ;
+            color: Snow ;  }
+
+        div.white {
+            border-color: Lavender  ;
+            border-width: 2px; }
+
+        div.white span.h {
+            background-color: Snow       ;
+            color: MintCream ; }
+        
         div.red {  border-color: HotPink }
 
         div.red span.h {
@@ -237,6 +262,24 @@ String y = "morning.".
     <h4/>
 
 
+<p>
+<div class="red box"><span class="h">box1</span><p>I'm an inline block!</p></div>
+
+<div class="yellow box"><span class="h">box2</span><p>I'm an inline block!</p></div>
+
+<div class="blue box"><span class="h">box2</span><p>I'm an inline block!</p></div>
+
+<div class="green box"><span class="h">box2</span><p>I'm an inline block!</p></div>
+</p>
+
+<p>
+<div class="white box"> <span class="h">Hello</span> <p>        hello world  </p> <span>world</span>
+</div>
+<div class="black box"><span class="h">Step</span><p>Hello World</p></div>
+<div class="box"> <span class="h">Hello</span> <p>hello world</p> <span>Hello</span>
+</div>
+<div class="link"><span class="h">Step</span><p>====></p></div>
+</p>
 
 
 
