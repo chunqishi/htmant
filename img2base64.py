@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 ################################################################################
 # Name     : imgbase64.py                                                      #
 # Brief    : python tool to convert current directory iamges into base64 img   #
@@ -65,3 +66,8 @@ if __name__ == '__main__':
             fpy = fimg + ".html"
             if not os.path.exists(fpy):
                 imagetobase64(fimg, fpy)
+    elif os.path.exists(sys.argv[1]):
+        fimg = sys.argv[1]
+        fpy = fimg + ".html"
+        if not os.path.exists(fpy):
+            imagetobase64(fimg, fpy)
