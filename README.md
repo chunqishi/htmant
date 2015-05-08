@@ -12,7 +12,7 @@ When such time, html could be a good template for these:
 
 High available, and editable. 
 
-Here is an [Example].
+Here is an [Example](https://rawgit.com/chunqishi/htmant/master/template-shi-2013-11-15.html).
 
 # Usage
 
